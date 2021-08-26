@@ -1,0 +1,35 @@
+class funcoes
+{
+public:
+
+void LiberaMenuAdm(TMainMenu *Menu)
+{
+	//LIBERA MENU SÓ PARA  ADMINISTRADORES
+	for(int i=0; i < Menu->Items->Count; i++){
+	//NÍVEL 0
+		Menu->Items->Items[i]->Visible=true;
+
+		for(int j=0; j < Menu->Items->Items[i]->Count; j++){
+		//NÍVEL 1
+			Menu->Items->Items[i]->Items[j]->Visible=true;
+
+			if(Menu->Items->Items[i]->Items[j]->Count>0){
+				for(int w=0; w < Menu->Items->Items[i]->Items[j]->Count; w++){
+				//NÍVEL 2
+					Menu->Items->Items[i]->Items[j]->Items[w]->Visible=true;
+
+					if(Menu->Items->Items[i]->Items[j]->Items[w]->Count>0){
+						for(int y=0; y < Menu->Items->Items[i]->Items[j]->Items[w]->Count; y++){
+						//NÍVEL 3
+							Menu->Items->Items[i]->Items[j]->Items[w]->Items[y]->Visible=true;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+
+};

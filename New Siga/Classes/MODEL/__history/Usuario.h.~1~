@@ -1,0 +1,30 @@
+
+
+class Usuario
+
+{
+private:
+	AnsiString nome;
+	int codigo;
+	int matricula;
+	bool adm;
+	bool admFin;
+	bool admMat;
+
+
+public:
+	 // Getters e Setters
+	 AnsiString getNome(){
+	 return nome;
+	 }
+
+	 void setNome(AnsiString nome){
+	 this->nome = nome;
+	 }
+
+
+
+
+
+
+};

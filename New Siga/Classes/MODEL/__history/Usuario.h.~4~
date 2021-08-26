@@ -1,0 +1,45 @@
+
+
+class Usuario
+
+{
+private:
+	AnsiString nome;
+	int codigo;
+	int matricula;
+	bool adm;
+	bool admFin;
+	bool admMat;
+
+
+public:
+	 // Getters e Setters
+	 AnsiString getNome(){return nome;}
+
+	 void setNome(AnsiString Nome){nome = Nome;}
+
+		 int getCodigo(){return codigo;}
+
+	 void setCodigo(AnsiString dado){codigo = dado;}
+
+		 int getMatricula(){return matricula;}
+
+	 void setMatricula(AnsiString dado){nome = dado;}
+
+		 AnsiString getAdm(){return adm;}
+
+	 void setADM(AnsiString dado){dado = adm;}
+
+		 AnsiString getAdmFin(){return admFin;}
+
+	 void setAdmFin(AnsiString dado){admFin = dado;}
+
+		 AnsiString getAdmMat(){return admMat;}
+
+	 void setAdmMat(AnsiString dado){admMat = dado;}
+
+
+
+
+
+};
